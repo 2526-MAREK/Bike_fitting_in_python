@@ -67,8 +67,6 @@ def WysokoscSiedzenia_2(DlugoscWspornika, KatWspornika, KierownicaX, Spadek, S, 
 
     Reachmax = KierownicaX - (DlugoscWspornika * sin(radians(KatWspornika))) - (PrzesuniecieSiodla)
 
-    Steuerkopfy = Spadek - (DlugoscWspornika * sin(radians(KatWspornika))) - Odstęp - WysokoscWspornika
-
     Reachmin = Reachmax - (DlugoscWspornika * cos(radians(KatWspornika)))
 
     return Stackmin, Reachmin, Reachmax, Stackmax
