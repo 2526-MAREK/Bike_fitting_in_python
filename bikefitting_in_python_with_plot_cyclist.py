@@ -137,7 +137,7 @@ def stack_to_reach_output(S, OS, US, FL, OK, A, KL, H, VW, VL, AR, Innenbeinlaen
 
     A = Becken_x - Fussspitze_x
     B = Becken_y - Fussspitze_y
-    C = A * 2 + B * 2
+    C = A ** 2 + B ** 2
     SH = np.sqrt(C)  # Obliczenie wysokości siedzenia
 
     NS = np.abs(A) - np.sin(np.deg2rad(180 - 90 - 73)) * Kurbel
